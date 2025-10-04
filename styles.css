@@ -323,7 +323,6 @@ body::after {
 .main {
     flex: 1;
     padding: var(--spacing-xl);
-    padding-bottom: calc(var(--spacing-xl) + 70px);
 }
 
 .container {
@@ -844,32 +843,6 @@ body::after {
     font-size: 0.9375rem;
 }
 
-/* ========== FOOTER AD ========== */
-.footer-ad {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(20, 20, 20, 0.95);
-    border-top: 1px solid var(--color-border);
-    padding: var(--spacing-sm);
-    z-index: 50;
-}
-
-.ad-container {
-    max-width: 1600px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* AdSense styling */
-.adsbygoogle {
-    display: inline-block;
-    max-width: 100%;
-}
-
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1200px) {
     .header-content {
@@ -982,7 +955,6 @@ body::after {
 
     .main {
         padding: var(--spacing-md);
-        padding-bottom: calc(var(--spacing-md) + 70px);
     }
 
     .resources-grid {
@@ -1022,15 +994,6 @@ body::after {
 @media (max-width: 600px) {
     .resources-grid {
         grid-template-columns: 1fr;
-    }
-
-    .footer-ad {
-        padding: var(--spacing-xs);
-    }
-
-    .adsbygoogle {
-        width: 320px !important;
-        height: 100px !important;
     }
 }
 
