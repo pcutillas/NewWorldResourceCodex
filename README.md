@@ -1,6 +1,6 @@
 # New World Resource Codex
 
-A lightweight web-based tool for mapping resources to town locations in New World: Aeternum. Supports town storage limits, resource tracking, and custom organization.
+A lightweight web-based tool for mapping resources to town locations in New World: Aeternum. Supports town storage limits, sorting, and custom organization.
 
 ## Contributing
 
