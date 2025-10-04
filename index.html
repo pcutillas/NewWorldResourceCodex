@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New World - Resource Codex</title>
-    <link rel="icon" type="image/png" href="assets/New_World_Logo.png">
+    <link rel="icon" type="image/png" href="assets/web_ico_D4rkCrew.png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cinzel:wght@600&display=swap"
         rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1959643201148943"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,8 +33,15 @@
                     </div>
                     <div class="sort-dropdown" id="sortDropdown">
                         <button class="btn btn-secondary" id="sortBtn">
+                            <svg class="sort-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="4" y1="6" x2="20" y2="6"></line>
+                                <line x1="7" y1="12" x2="20" y2="12"></line>
+                                <line x1="10" y1="18" x2="20" y2="18"></line>
+                            </svg>
                             <span id="sortLabel">Custom Order</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </button>
@@ -73,7 +82,7 @@
                             <polyline points="17 8 12 3 7 8"></polyline>
                             <line x1="12" y1="3" x2="12" y2="15"></line>
                         </svg>
-                        Export
+                        <span>Export</span>
                     </button>
                     <button id="importBtn" class="btn btn-secondary">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -81,7 +90,7 @@
                             <polyline points="7 10 12 15 17 10"></polyline>
                             <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg>
-                        Import
+                        <span>Import</span>
                     </button>
                     <button id="addBtn" class="btn btn-primary">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -101,6 +110,18 @@
                 <div class="resources-grid" id="resourceWrapper"></div>
             </div>
         </main>
+
+        <!-- Footer Ad -->
+        <footer class="footer-ad">
+            <div class="ad-container">
+                <!-- AdSense Ad Unit -->
+                <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+                    data-ad-client="ca-pub-1959643201148943" data-ad-slot="YOUR_AD_SLOT_ID"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </footer>
 
         <!-- Modal -->
         <div id="modal" class="modal">
