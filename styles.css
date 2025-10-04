@@ -323,6 +323,8 @@ body::after {
 .main {
     flex: 1;
     padding: var(--spacing-xl);
+    padding-bottom: 80px;
+    /* Space for footer */
 }
 
 .container {
@@ -841,6 +843,103 @@ body::after {
     padding: var(--spacing-xl) var(--spacing-lg);
     color: var(--color-text-tertiary);
     font-size: 0.9375rem;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(20, 20, 20, 0.98);
+    border-top: 1px solid var(--color-border);
+    z-index: 90;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer.collapsed {
+    transform: translateY(100%);
+}
+
+.footer-toggle {
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(20, 20, 20, 0.98);
+    border: 1px solid var(--color-border-light);
+    border-bottom: 1px solid var(--color-border);
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    padding: 0.25rem 2rem;
+    cursor: pointer;
+    color: var(--color-gold-dark);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -2px 8px rgba(212, 175, 55, 0.15);
+    animation: footerTabPulse 3s ease-in-out infinite;
+}
+
+@keyframes footerTabPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 -2px 8px rgba(212, 175, 55, 0.15);
+    }
+
+    50% {
+        box-shadow: 0 -2px 12px rgba(212, 175, 55, 0.25);
+    }
+}
+
+.footer-toggle:hover {
+    background: var(--color-surface-hover);
+    color: var(--color-gold-light);
+    border-color: var(--color-gold-dark);
+    box-shadow: 0 -2px 16px rgba(212, 175, 55, 0.35);
+    animation: none;
+    transform: translateX(-50%) translateY(-2px);
+}
+
+.footer-toggle svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 0 2px rgba(212, 175, 55, 0.3));
+}
+
+.footer.collapsed .footer-toggle {
+    border-bottom: none;
+}
+
+.footer.collapsed .footer-toggle svg {
+    transform: rotate(180deg);
+}
+
+.footer-content {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: var(--spacing-lg) var(--spacing-xl);
+}
+
+.footer-content p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+}
+
+.footer-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: var(--color-gold-light);
 }
 
 /* ========== RESPONSIVE ========== */

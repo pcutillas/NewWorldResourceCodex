@@ -751,5 +751,21 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Footer toggle functionality
+const footer = document.getElementById('footer');
+const footerToggle = document.getElementById('footerToggle');
+
+// Load footer state from localStorage
+const footerCollapsed = localStorage.getItem('footer-collapsed') === 'true';
+if (footerCollapsed) {
+    footer.classList.add('collapsed');
+}
+
+footerToggle.addEventListener('click', () => {
+    footer.classList.toggle('collapsed');
+    const isCollapsed = footer.classList.contains('collapsed');
+    localStorage.setItem('footer-collapsed', isCollapsed);
+});
+
 // Initialize app
 init();
